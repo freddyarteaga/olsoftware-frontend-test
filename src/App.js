@@ -1,5 +1,11 @@
+import { LoginPage } from './pages/login'
+import { DashboardPage } from './pages/dashboard'
+
 export const App = () => {
   return (
-    <div>AppComponent!</div>
+    <>
+      {/* <LoginPage /> */}
+      <DashboardPage />
+    </>
   )
 }
