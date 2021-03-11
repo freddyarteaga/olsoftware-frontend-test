@@ -94,12 +94,15 @@ code {
 /* END: form login ------------------- */
 
 
+
 .FullPage {
   width: 100vw;
   height: 100vh;
   background-color: lightgray;
 }
 
+
+/* START: login page ------------------- */
 .LoginPage {
   display: flex;
   flex-wrap: nowrap;
@@ -114,4 +117,52 @@ code {
   position: fixed;
   bottom: 15px;
   text-align: center;
+}
+/* END: login page ------------------- */
+
+
+/* START: dashboard page ------------------- */
+.DashboardPage {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: 
+    "🍎 🍊"
+    "🍎 🍉"
+    "🍎 🍐";
+}
+.DashboardPage--sidebar {
+  grid-area: 🍎;
+}
+.DashboardPage--header {
+  grid-area: 🍊;
+}
+.DashboardPage--content {
+  grid-area: 🍉;
+}
+.DashboardPage--footer {
+  grid-area: 🍐;
+}
+/* END: dashboard page ------------------- */
+
+
+.Header {
+  padding: 30px 35px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  background-color: white;
+}
+.Header-Side--left, .Header-Side--right {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.Header-Title {
+  margin: 0;
+  color: #2644A7;
 }
