@@ -1,4 +1,5 @@
 import { Header } from '../components/header'
+import { Footer } from '../components/footer'
 
 export const DashboardPage = () => {
   return (
@@ -10,10 +11,11 @@ export const DashboardPage = () => {
         <Header />
       </div>
       <div className="DashboardPage--content">
-        content
+        <span style={{backgroundColor: 'lightblue'}}>content</span>
+        <span style={{backgroundColor: 'lightgreen'}}>otra cosa</span>
       </div>
       <div className="DashboardPage--footer">
-        footer
+        <Footer />
       </div>
     </main>
   )
