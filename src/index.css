@@ -12,11 +12,6 @@ code {
     monospace;
 }
 
-.TempBackground {
-  background-color: lightgray;
-  padding: 25px;
-}
-
 
 /* START: card ------------------- */
 .Card {
@@ -97,3 +92,26 @@ code {
   margin: 43px 0 80px;
 }
 /* END: form login ------------------- */
+
+
+.FullPage {
+  width: 100vw;
+  height: 100vh;
+  background-color: lightgray;
+}
+
+.LoginPage {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.LoginPage-Title {
+  font-weight: normal;
+}
+.LoginPage-Caption {
+  position: fixed;
+  bottom: 15px;
+  text-align: center;
+}
