@@ -11,3 +11,89 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.TempBackground {
+  background-color: lightgray;
+  padding: 25px;
+}
+
+
+/* START: card ------------------- */
+.Card {
+  background-color: white;
+}
+.Card--small {
+  border-radius: 8px;
+}
+.Card--large {
+  border-radius: 45px;
+  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.1);
+}
+/* END: card ------------------- */
+
+
+/* START: btn primary ------------------- */
+.BtnPrimary {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  background-color: #3653D8;
+}
+.BtnPrimary:hover {
+  background-color: #273C9C;
+}
+.BtnPrimary--small {
+  padding: 10px 34px;
+  font-size: 14px;
+}
+.BtnPrimary--large {
+  padding: 16px;
+  font-size: 16px;
+}
+/* END: btn primary ------------------- */
+
+
+/* START: form login ------------------- */
+.FormLogin {
+  max-width: 295px;
+  padding: 0 80px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.FormLogin_Title {
+  margin: 50px 0 40px;
+  font-size: 32px;
+  font-weight: normal;
+  text-align: center;
+  color: #434343;
+}
+.FormLogin-InputContainer {
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 1px 10px 34px -11px rgb(0 0 0 / 0.20);
+}
+.FormLogin_Input {
+  padding: 14px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.FormLogin_Input input {
+  flex-grow: 1;
+  outline: none;
+  border: none;
+}
+.FormLogin_Input--user {
+  border-bottom: solid 1px lightgray;
+}
+.FormLogin_Btn {
+  margin: 43px 0 80px;
+}
+/* END: form login ------------------- */
