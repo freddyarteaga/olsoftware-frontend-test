@@ -139,6 +139,11 @@ code {
 }
 .DashboardPage--content {
   grid-area: 🍉;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 1r;
+  gap: 20px;
 }
 .DashboardPage--footer {
   grid-area: 🍐;
@@ -146,6 +151,7 @@ code {
 /* END: dashboard page ------------------- */
 
 
+/* START: header ------------------- */
 .Header {
   padding: 30px 35px;
   display: flex;
@@ -166,3 +172,20 @@ code {
   margin: 0;
   color: #2644A7;
 }
+/* END: header ------------------- */
+
+
+/* START: footer ------------------- */
+.Footer {
+  padding: 20px 35px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: white;
+}
+.Footer-Text {
+  color: darkgray;
+}
+/* END: footer ------------------- */
