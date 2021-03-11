@@ -1,4 +1,5 @@
 import { Header } from '../components/header'
+import { FilterForm } from '../components/filter-form'
 import { Footer } from '../components/footer'
 
 export const DashboardPage = () => {
@@ -12,7 +13,7 @@ export const DashboardPage = () => {
       </div>
       <div className="DashboardPage--content">
         <span style={{backgroundColor: 'lightblue'}}>content</span>
-        <span style={{backgroundColor: 'lightgreen'}}>otra cosa</span>
+        <FilterForm />
       </div>
       <div className="DashboardPage--footer">
         <Footer />

@@ -189,3 +189,92 @@ code {
   color: darkgray;
 }
 /* END: footer ------------------- */
+
+
+/* START: form ------------------- */
+.Form--filter {
+  padding: 15px 25px;
+}
+.Form-Title--filter {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.Form-TitleText {
+  font-weight: normal;
+  color: #2644A7;
+}
+.Form-BtnsContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.Form-BtnsContainer--full > * {
+  flex-grow: 1;
+  background-color: #2644A7;
+}
+.Form-BtnsContainer--full > *:first-child {
+  margin-right: 10px;
+}
+/* END: form ------------------- */
+
+
+/* START: input ------------------- */
+.Input {
+  min-width: 280px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.Input-Label {
+  margin-bottom: 4px;
+  color: darkgray;
+}
+.Input-Control {
+  box-sizing: border-box;
+  width: 100%;
+  outline: none;
+  border: solid 1px darkgray;
+  border-radius: 4px;
+  padding: 10px;
+}
+/* END: input ------------------- */
+
+
+/* START: btn secundary ------------------- */
+.BtnSecundary {
+  padding: 10px 34px;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+}
+/* END: btn secundary ------------------- */
+
+.BtnSecundary--fill {
+  color: white;
+  background: rgb(152,193,90);
+  background: linear-gradient(90deg, rgba(152,193,90,1) 0%, rgba(96,144,24,1) 100%);
+}
+.BtnSecundary--outline {
+  border: solid 1px #609018;
+  color: #609018;
+  background-color: white;
+}
+
+/* .BtnPrimary--small {
+  padding: 10px 34px;
+  font-size: 14px;
+}
+.BtnPrimary--large {
+  padding: 16px;
+  font-size: 16px;
+} */
