@@ -6,6 +6,7 @@ import { IoExitOutline } from 'react-icons/io5'
 
 
 export const Header = () => {
+  const { setIsAuth } = useContext(Context)
   const { isCollapse, setIsCollapse } = useContext(Context)
 
   function hdlClickBurger() {
@@ -17,7 +18,8 @@ export const Header = () => {
   }
 
   function hdlClickLogout() {
-    console.log('hdlClickLogout')
+    console.log('asdf')
+    setIsAuth(false)
   }
 
   return (
@@ -46,7 +48,7 @@ export const Header = () => {
           size={24} 
           color="#2644A7" 
           onClick={hdlClickLogout} 
-          style={{ marginLeft: 25 }} 
+          style={{ marginLeft: 25, cursor: 'pointer' }} 
         />
       </div>
     </header>

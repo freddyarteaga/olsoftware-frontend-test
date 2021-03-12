@@ -1,13 +1,20 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import { ImUsers } from 'react-icons/im'
 import { IoTrash } from 'react-icons/io5'
 import { MdModeEdit } from 'react-icons/md'
+import { Context } from '../context'
 
 export const UsersTable = () => {
-  const [data, setData] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9])
+  const { users, setUsers } = useContext(Context)
 
   function hdlClickCreate() {
     console.log('hdlClickCreate')
+  }
+
+  function hdlClickDelete(index) {
+    const newUsers = [...users]
+    newUsers.splice(index, 1)
+    setUsers(newUsers)
   }
 
   return (
@@ -21,7 +28,7 @@ export const UsersTable = () => {
         </div>
         <div className="UsersTable_Side--right">
           <button className="BtnPrimary BtnPrimary--small" onClick={hdlClickCreate}>
-            Crear
+            Filtrar
           </button>
         </div>
       </div>
@@ -57,37 +64,36 @@ export const UsersTable = () => {
           </thead>
           <tbody className="Table_Body">
             {
-              data.map((value) => (
-                <tr key={value}>
+              users.map((user, index) => (
+                <tr key={user.id}>
                   <td>
-                    Andrés Felipe
+                    {user.firstName}
                   </td>
                   <td>
-                    Garcia Castro
+                    {user.lastName}
                   </td>
                   <td>
-                    114485404
+                    {user.id}
                   </td>
                   <td>
-                    Administrador
+                    {user.rol}
                   </td>
                   <td>
-                    Activo
+                    {user.state}
                   </td>
                   <td>
-                    3165303978
+                    {user.phone}
                   </td>
                   <td>
-                    afgarcia@refinal.com
+                    {user.email}
                   </td>
                   <td>
                     <MdModeEdit color="#2644A7" style={{ cursor: 'pointer', marginRight: 10 }} />
-                    <IoTrash style={{ cursor: 'pointer' }} />
+                    <IoTrash onClick={() => hdlClickDelete(index)} style={{ cursor: 'pointer' }} />
                   </td>
                 </tr>
               ))
             }
-
           </tbody>
         </table>
       </div>

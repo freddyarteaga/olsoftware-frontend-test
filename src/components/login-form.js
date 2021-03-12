@@ -1,12 +1,8 @@
 import { useInputValue } from '../hooks/use-input-value'
 import { AiOutlineUser } from "react-icons/ai";
 import { BsLock } from "react-icons/bs";
-import Loader from 'react-loaders'
 import { useContext } from 'react';
 import { Context } from '../context';
-
-let loader = <Loader type="ball-pulse-sync" />
-
 
 export const LoginForm = () => {
   const { loading, setLoading, setIsAuth } = useContext(Context)

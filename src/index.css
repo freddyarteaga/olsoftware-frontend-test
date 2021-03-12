@@ -415,12 +415,16 @@ code {
 
 
 .SidebarItem {
+  cursor: pointer;
   padding: 10px 25px;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+}
+.SidebarItem:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .SidebarItem_Text {
   font-weight: normal;
