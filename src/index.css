@@ -278,3 +278,91 @@ code {
   padding: 16px;
   font-size: 16px;
 } */
+
+/* START: users table ------------------- */
+.UsersTable_Header {
+  padding: 10px 35px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.UsersTable_Side--left {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.UsersTable_Title {
+  font-weight: normal;
+  color: #2644A7;
+}
+/* END: users table ------------------- */
+
+
+/* START: table ------------------- */
+.Table {
+  padding: 10px 35px;
+  width: 100%;
+}
+.Table_Heading td {
+  padding: 10px;
+  text-align: center;
+  color: #434343;
+  border-bottom: solid 2px gray;
+}
+.Table_Body td {
+  padding: 15px 10px;
+  text-align: center;
+  color: gray;
+  border-bottom: solid 1px lightgray;
+}
+.Table_Heading td:first-child {
+  text-align: left;
+}
+.Table_Heading td:last-child {
+  text-align: right;
+}
+.Table_Body td:first-child {
+  text-align: left;
+}
+.Table_Body td:last-child {
+  text-align: right;
+}
+/* END: table ------------------- */
+
+
+/* START: sidebar ------------------- */
+.Sidebar {
+  overflow: hidden;
+  width: 282px;
+  height: 100vh;
+  background: rgb(96,171,234);
+  background: linear-gradient(180deg, rgba(96,171,234,1) 0%, rgba(38,68,167,1) 100%);
+  transition: width 250ms;
+}
+.Sidebar_Header {
+  padding: 10px 0;
+  border-bottom: solid 1px white;
+}
+.Sidebar--collapse {
+  width: 82px;
+}
+/* END: sidebar ------------------- */
+
+
+.SidebarItem {
+  padding: 10px 25px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.SidebarItem_Text {
+  font-weight: normal;
+  color: white;
+  white-space: nowrap;
+}
