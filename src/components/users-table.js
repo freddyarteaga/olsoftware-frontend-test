@@ -26,7 +26,7 @@ export const UsersTable = () => {
         </div>
       </div>
       <div className="UsersTable_Content">
-        <table className="Table" border="0" cellpadding="0" cellspacing="0">
+        <table className="Table" border="0" cellPadding="0" cellSpacing="0">
           <thead className="Table_Heading">
             <tr>
               <td>

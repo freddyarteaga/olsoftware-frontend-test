@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { Context } from '../context'
+import { useContext } from 'react'
 import { SidebarItem } from './sidebar-item'
 import { MdMap } from 'react-icons/md'
 import { AiOutlineUnorderedList } from 'react-icons/ai'
@@ -10,11 +11,11 @@ import { BsCircleFill } from 'react-icons/bs'
 
 
 export const Sidebar = () => {
-  const [isCollapse, setIsCollapse] = useState(false)
+  const { isCollapse } = useContext(Context)
 
   return (
     <nav className={`Sidebar ${isCollapse && 'Sidebar--collapse'}`}>
-      <div className="Sidebar_Header" onClick={() => setIsCollapse(!isCollapse) }>
+      <div className="Sidebar_Header">
         <SidebarItem
           icon={<BsCircleFill size={32} color="white" style={{ marginRight: 28 }} />}
           text="OLSoftware"

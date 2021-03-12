@@ -9,7 +9,7 @@ export const LoginPage = () => {
           <br />
           OLSoftware
         </h2>
-        <p>
+        <p className="LoginPage-Text">
           Prueba práctica Front-end super senior
         </p>
       </div>

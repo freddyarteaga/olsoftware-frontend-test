@@ -1,10 +1,15 @@
+import { useContext } from 'react'
+import { Context } from '../context'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { FaUserCircle } from 'react-icons/fa'
 import { IoExitOutline } from 'react-icons/io5'
 
+
 export const Header = () => {
+  const { isCollapse, setIsCollapse } = useContext(Context)
+
   function hdlClickBurger() {
-    console.log('hdlClickBurger')
+    setIsCollapse(!isCollapse)
   }
 
   function hdlClickProfile() {
@@ -21,7 +26,7 @@ export const Header = () => {
         <GiHamburgerMenu 
           color="#2644A7" 
           onClick={hdlClickBurger} 
-          style={{ marginRight: 15 }} 
+          style={{ marginRight: 15, cursor: 'pointer' }} 
         />
         <h3 className="Header-Title">
           Prueba Front-end

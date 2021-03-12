@@ -12,6 +12,58 @@ code {
     monospace;
 }
 
+.loader,
+.loader:after {
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+}
+.loader {
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 1.1em solid lightgray;
+  border-right: 1.1em solid lightgray;
+  border-bottom: 1.1em solid lightgray;
+  border-left: 1.1em solid #3653D8;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 1.1s infinite linear;
+}
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.loader-container {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 
 /* START: card ------------------- */
 .Card {
@@ -52,6 +104,7 @@ code {
 
 /* START: form login ------------------- */
 .FormLogin {
+  position: relative;
   max-width: 295px;
   padding: 0 80px;
   display: flex;
@@ -109,14 +162,22 @@ code {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  background-image: url(./imgs/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .LoginPage-Title {
   font-weight: normal;
+  color: white;
+}
+.LoginPage-Text {
+  color: white;
 }
 .LoginPage-Caption {
   position: fixed;
   bottom: 15px;
   text-align: center;
+  color: white;
 }
 /* END: login page ------------------- */
 
