@@ -12,7 +12,7 @@ npm install
 ```
 yarn install
 ```
-Arrancar proyecto
+Arrancar proyecto:
 ```
 npm start
 ```
